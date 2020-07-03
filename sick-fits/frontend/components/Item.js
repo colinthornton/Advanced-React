@@ -5,6 +5,7 @@ import Link from "next/link";
 import Title from "../components/styles/Title";
 import ItemStyles from "../components/styles/ItemStyles";
 import PriceTag from "../components/styles/PriceTag";
+import DeleteItem from "../components/DeleteItem";
 import formatMoney from "../lib/formatMoney";
 
 class Item extends Component {
@@ -29,7 +30,7 @@ class Item extends Component {
             <a>Edit ✏️</a>
           </Link>
           <button>Add To Cart</button>
-          <button>Delete</button>
+          <DeleteItem id={item.id}>Delete Item</DeleteItem>
         </div>
       </ItemStyles>
     );
